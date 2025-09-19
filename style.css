@@ -1,0 +1,70 @@
+/* Sfondo animato */
+body {
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(270deg, #ff6ec4, #7873f5, #4ade80);
+  background-size: 600% 600%;
+  animation: gradient 15s ease infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes gradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Card centrale in glassmorphism */
+.card {
+  padding: 2rem;
+  max-width: 400px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* Titolo */
+.card h1 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.card h1 span {
+  color: #ffea00;
+}
+
+.card a {
+  color: white;
+  text-decoration: none;
+}
+
+
+/* Bottoni */
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* distanza tra i bottoni */
+  
+}
+
+.buttons a {
+  text-decoration: none;
+  color: white;
+  background: #4ade80;
+  padding: 10px 20px;
+  border-radius: 12px;
+  margin: 0 5px;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.buttons a:hover {
+  transform: scale(1.1);
+  background: #22c55e;
+}
